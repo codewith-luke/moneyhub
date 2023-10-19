@@ -28,4 +28,5 @@ fetch('https://identity.moneyhub.co.uk/oidc/request', {
     .then(data => console.log(data))
     .catch(error => console.error(error));
 
+// Use this URL for the page redirect
 // https://identity.moneyhub.co.uk/oidc/auth?request_uri=
