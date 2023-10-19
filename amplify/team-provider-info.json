@@ -17,6 +17,9 @@
           "appId": "d1q3bvo0twd4o",
           "type": "manual"
         }
+      },
+      "auth": {
+        "moneyhub46961a8f": {}
       }
     }
   }

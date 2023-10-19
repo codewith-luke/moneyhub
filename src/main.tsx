@@ -5,9 +5,12 @@ import {
 } from "react-router-dom";
 import './index.css'
 import router from "./routing.tsx";
+import {Authenticator} from "@aws-amplify/ui-react";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <Authenticator>
+            <RouterProvider router={router}/>
+        </Authenticator>
     </React.StrictMode>,
 )
