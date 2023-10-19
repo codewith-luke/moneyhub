@@ -102,3 +102,7 @@ One for account, transations etc. To more centralize this.
 
 Overall I really enjoyed the challenge. I streamed it as well to add some extra pressure. But I learnt a lot.
 There are things I would do differently with my approach, but hopefully I outlined my thought process well enough.
+
+Deployed URL can be found here. Due to my issues on time there is not much to see! But at least login was working!
+u:testuser p:test1234
+https://dev.d1q3bvo0twd4o.amplifyapp.com/
