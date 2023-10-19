@@ -1,0 +1,205 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moneyhub-dev-191407-authRole",
+      "UnauthRoleArn": "arn:aws:iam::570578369461:role/amplify-moneyhub-dev-191407-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::570578369461:role/amplify-moneyhub-dev-191407-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-moneyhub-dev-191407-deployment",
+      "UnauthRoleName": "amplify-moneyhub-dev-191407-unauthRole",
+      "StackName": "amplify-moneyhub-dev-191407",
+      "StackId": "arn:aws:cloudformation:eu-west-1:570578369461:stack/amplify-moneyhub-dev-191407/4be054c0-6eab-11ee-8a8b-0a4c1b00651f",
+      "AmplifyAppId": "d1q3bvo0twd4o",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2023-10-19T20:57:36.818Z",
+      "output": {},
+      "lastPushDirHash": "wWvUWHZZQ/uw6iNo5fpmHx+xPuk="
+    }
+  },
+  "auth": {
+    "moneyhub46961a8f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/auth/moneyhub46961a8f-cloudformation-template.json",
+        "logicalId": "authmoneyhub46961a8f"
+      },
+      "lastPushTimeStamp": "2023-10-19T20:57:36.820Z",
+      "output": {
+        "UserPoolId": "eu-west-1_IEQRi2oMK",
+        "AppClientIDWeb": "11qpm9hc27meu0ortno8mdmmj7",
+        "AppClientID": "3ep9hi346ooj75vf13s8lmkl10",
+        "IdentityPoolId": "eu-west-1:ad9e96af-d027-4e14-9d35-3905a13a2954",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-1:570578369461:userpool/eu-west-1_IEQRi2oMK",
+        "IdentityPoolName": "moneyhub46961a8f_identitypool_46961a8f__dev",
+        "UserPoolName": "moneyhub46961a8f_userpool_46961a8f"
+      },
+      "lastPushDirHash": "i12hIzGtiZqp+T3emUJiNKBPRHg="
+    }
+  },
+  "function": {
+    "getAccount": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-10-19T20:20:00.196Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-10-19T20:20:02.025Z",
+      "distZipFilename": "getAccount-55426b3053476c2f316a-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-moneyhub-dev-191407-deployment",
+        "s3Key": "amplify-builds/getAccount-55426b3053476c2f316a-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/function/getAccount-cloudformation-template.json",
+        "logicalId": "functiongetAccount"
+      },
+      "lastPushTimeStamp": "2023-10-19T20:57:36.821Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::570578369461:role/moneyhubLambdaRole69f8ca57-dev",
+        "Region": "eu-west-1",
+        "Arn": "arn:aws:lambda:eu-west-1:570578369461:function:getAccount-dev",
+        "Name": "getAccount-dev",
+        "LambdaExecutionRole": "moneyhubLambdaRole69f8ca57-dev"
+      },
+      "lastPushDirHash": "KQJO1yA2L6tBwHaxqCmI7oNdKis="
+    },
+    "signup": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-10-19T20:57:39.952Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-10-19T20:57:43.397Z",
+      "distZipFilename": "signup-30316136587044467138-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-moneyhub-dev-191407-deployment",
+        "s3Key": "amplify-builds/signup-30316136587044467138-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/function/signup-cloudformation-template.json",
+        "logicalId": "functionsignup"
+      },
+      "lastPushTimeStamp": "2023-10-19T20:57:52.316Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::570578369461:role/moneyhubLambdaRoleb80082d5-dev",
+        "Region": "eu-west-1",
+        "Arn": "arn:aws:lambda:eu-west-1:570578369461:function:signup-dev",
+        "Name": "signup-dev",
+        "LambdaExecutionRole": "moneyhubLambdaRoleb80082d5-dev"
+      },
+      "lastPushDirHash": "tcbNY1+OtARTSzKWHQ74yTn0kUI=",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ]
+    },
+    "completeMoneyHubConnection": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createMoneyHubToken": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createMoneyHubAuthUrl": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    },
+    "getTransactions": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "linkProvider": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createMoneyHubUser": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "api": {
+    "moneyhub": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "getAccount",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/api/moneyhub-cloudformation-template.json",
+        "logicalId": "apimoneyhub"
+      },
+      "lastPushTimeStamp": "2023-10-19T21:27:16.369Z",
+      "output": {
+        "ApiName": "moneyhub",
+        "RootUrl": "https://h0ucowqfgc.execute-api.eu-west-1.amazonaws.com/dev",
+        "ApiId": "h0ucowqfgc"
+      },
+      "lastPushDirHash": "WfXV4CKYEMkhezMbs9w0xLBUNPE="
+    }
+  },
+  "storage": {
+    "moneyhub": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/storage/moneyhub-cloudformation-template.json",
+        "logicalId": "storagemoneyhub"
+      },
+      "lastPushTimeStamp": "2023-10-19T20:57:52.308Z"
+    }
+  }
+}

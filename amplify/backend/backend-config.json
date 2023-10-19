@@ -1,4 +1,20 @@
 {
+  "api": {
+    "moneyhub": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getAccount"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "moneyhub46961a8f": {
       "customAuth": false,
@@ -25,6 +41,60 @@
       "service": "Cognito"
     }
   },
+  "function": {
+    "completeMoneyHubConnection": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createMoneyHubAuthUrl": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createMoneyHubToken": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createMoneyHubUser": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getAccount": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getTransactions": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "linkProvider": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "signup": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "providerPlugin": "awscloudformation",
@@ -33,6 +103,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_getAccount_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getAccount"
+        }
+      ]
+    },
+    "AMPLIFY_function_getAccount_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getAccount"
+        }
+      ]
+    },
+    "AMPLIFY_function_signup_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "signup"
+        }
+      ]
+    },
+    "AMPLIFY_function_signup_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "signup"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
@@ -48,6 +150,68 @@
           "resourceName": "amplifyhosting"
         }
       ]
+    },
+    "AMPLIFY_storage_moneyhub_arn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    },
+    "AMPLIFY_storage_moneyhub_partitionKeyName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    },
+    "AMPLIFY_storage_moneyhub_partitionKeyType": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    },
+    "AMPLIFY_storage_moneyhub_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    },
+    "AMPLIFY_storage_moneyhub_sortKeyName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    },
+    "AMPLIFY_storage_moneyhub_sortKeyType": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    },
+    "AMPLIFY_storage_moneyhub_tableName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "moneyhub"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "moneyhub": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

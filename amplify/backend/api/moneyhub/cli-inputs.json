@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "paths": {
+    "/account": {
+      "name": "/account",
+      "lambdaFunction": "getAccount",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    }
+  }
+}

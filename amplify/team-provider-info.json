@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-moneyhub-dev-191407-unauthRole",
       "StackName": "amplify-moneyhub-dev-191407",
       "StackId": "arn:aws:cloudformation:eu-west-1:570578369461:stack/amplify-moneyhub-dev-191407/4be054c0-6eab-11ee-8a8b-0a4c1b00651f",
-      "AmplifyAppId": "d1q3bvo0twd4o"
+      "AmplifyAppId": "d1q3bvo0twd4o",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-moneyhub-dev-191407-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "hosting": {
@@ -20,6 +21,36 @@
       },
       "auth": {
         "moneyhub46961a8f": {}
+      },
+      "function": {
+        "getAccount": {
+          "deploymentBucketName": "amplify-moneyhub-dev-191407-deployment",
+          "s3Key": "amplify-builds/getAccount-55426b3053476c2f316a-build.zip"
+        },
+        "signup": {
+          "deploymentBucketName": "amplify-moneyhub-dev-191407-deployment",
+          "s3Key": "amplify-builds/signup-30316136587044467138-build.zip"
+        },
+        "completeMoneyHubConnection": {},
+        "createMoneyHubToken": {},
+        "createMoneyHubAuthUrl": {},
+        "getTransactions": {},
+        "linkProvider": {},
+        "createMoneyHubUser": {}
+      },
+      "api": {
+        "moneyhub": {}
+      },
+      "storage": {
+        "moneyhub": {
+          "tableName": "moneyhub",
+          "region": "eu-west-1",
+          "arn": "arn:aws:dynamodb:eu-west-1:570578369461:table/moneyhub",
+          "partitionKeyName": "PK",
+          "partitionKeyType": "S",
+          "sortKeyName": "SK",
+          "sortKeyType": "S"
+        }
       }
     }
   }

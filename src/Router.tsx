@@ -1,5 +1,5 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import RequireAuth from "./components/RequireAuth.tsx";
+import RequiresAuth from "./components/RequiresAuth.tsx";
 import {Layout} from "./routes/Layout.tsx";
 import Home from "./routes/Home.tsx";
 import Login from "./routes/Login.tsx";
@@ -8,10 +8,12 @@ export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/">
-                    {/*<RequireAuth>*/}
-                    <Route index element={<Home/>}/>
-                    {/*</RequireAuth>*/}
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={
+                        <RequiresAuth>
+                            <Home/>
+                        </RequiresAuth>
+                    }/>
                     <Route path="/login" element={<Login/>}/>
                 </Route>
             </Routes>
