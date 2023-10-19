@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moneyhub-dev-191407-authRole",
+      "UnauthRoleArn": "arn:aws:iam::570578369461:role/amplify-moneyhub-dev-191407-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::570578369461:role/amplify-moneyhub-dev-191407-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-moneyhub-dev-191407-deployment",
+      "UnauthRoleName": "amplify-moneyhub-dev-191407-unauthRole",
+      "StackName": "amplify-moneyhub-dev-191407",
+      "StackId": "arn:aws:cloudformation:eu-west-1:570578369461:stack/amplify-moneyhub-dev-191407/4be054c0-6eab-11ee-8a8b-0a4c1b00651f",
+      "AmplifyAppId": "d1q3bvo0twd4o"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1q3bvo0twd4o",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
