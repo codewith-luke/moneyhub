@@ -1,11 +1,7 @@
 import {useState} from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
-import {Amplify} from 'aws-amplify';
-import awsExports from '../aws-exports';
 import '../App.css'
-
-Amplify.configure(awsExports);
 
 function Home() {
     const [count, setCount] = useState(0)
