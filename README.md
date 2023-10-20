@@ -37,7 +37,7 @@ good opportunity to learn something new.
 ## What would I have done different?
 
 - Biggest slow down was definitely the lambdas. That was my technical decision though as I felt I wanted to try and keep
-  in line with the Strabo stack. I should of focused more on just mocking out the moneyhub side of things and implementing
+  in line with the Strabo stack and ran into a few technical hiccups and missunderstandings (expected but I know I could improve here). I should of focused more on just mocking out the moneyhub side of things and implementing
   my poc work after I had understood their integration and gathered all the pieces.
 
 - Although I had my priority list I think I could have maybe just creating a skeleton UI. The auth was done and worked.
