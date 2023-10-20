@@ -28,20 +28,20 @@ good opportunity to learn something new.
 
 1. Understand end to end. I focused more on understanding all the different parts before I did code. So making sure I
    understood how to connect to moneyhub and what we needed from there.
-2. Get a basic auth, before I made the UI look good.
-3. Get lambdas outlined and connection functionality working.
-4. Store logic into the DB
-5. Deploy
+   I wanted to collect all the pieces to pull off the moneyhub integration and have everything to get there.
+3. Get a basic auth, before I made the UI look good.
+4. Get lambdas outlined and connection functionality working.
+5. Store logic into the DB
+6. Deploy
 
 ## What would I have done different?
 
 - Biggest slow down was definitely the lambdas. That was my technical decision though as I felt I wanted to try and keep
-  in line with the Strabo stack. I think if I was to do it again I would have just booted up a node server and made
-  progress.
+  in line with the Strabo stack. I should of focused more on just mocking out the moneyhub side of things and implementing
+  my poc work after I had understood their integration and gathered all the pieces.
 
 - Although I had my priority list I think I could have maybe just creating a skeleton UI. The auth was done and worked.
-  However definitely
-  could have been better and I could have shown off more of my skills in that area.
+  However definitely could have been better and I could have shown off more of my skills in that area.
 
 - I just left keys in the code, in reality this would be in a .env or a secure key store
 
