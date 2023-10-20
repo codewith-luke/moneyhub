@@ -40,9 +40,6 @@ this was a good opportunity to learn something new.
   in line with the Strabo stack and ran into a few technical hiccups and missunderstandings (expected but I know I could improve here). I should of focused more on just mocking out the moneyhub side of things and implementing
   my poc work after I had understood their integration and gathered all the pieces.
 
-- Although I had my priority list I think I could have maybe just creating a skeleton UI. The auth was done and worked.
-  However definitely could have been better and I could have shown off more of my skills in that area.
-
 - I just left keys in the code, in reality this would be in a .env or a secure key store
 
 - Lambdas I would generally write in typescript
