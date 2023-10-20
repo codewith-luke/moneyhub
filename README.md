@@ -37,8 +37,7 @@ this was a good opportunity to learn something new.
 ## What would I have done different?
 
 - Biggest slow down was definitely the lambdas. That was my technical decision though as I felt I wanted to try and keep
-  in line with the Strabo stack and ran into a few technical hiccups and missunderstandings (expected but I know I could improve here). I should of focused more on just mocking out the moneyhub side of things and implementing
-  my poc work after I had understood their integration and gathered all the pieces.
+  in line with the Strabo stack and ran into a few technical hiccups and missunderstandings (expected but I know I could improve here). I had all the pieces for the Moneyhub integration I just should of focused on putting that together using my poc work after I had understood their integration and understood the flow.
 
 - I just left keys in the code, in reality this would be in a .env or a secure key store
 
