@@ -17,12 +17,12 @@
 ## Approach
 
 First thanks for the challenge. I decided I wanted to try and keep the stack as close to your existing one as possible.
-So there were definitely some things I would have done differently if I was starting from scratch.
+So there were definitely some things that slowed me down or took away from my time, where if I just went with what I knew I think
+would of been better, but was fun to give it a shot.
 
 To start I decided to use Amplify to get me up and running. If I wasn't looking for a challenge and was to do it
 differently I would have probably just booted up a node server and got some basic endpoints working. However, felt like
-this was a
-good opportunity to learn something new.
+this was a good opportunity to learn something new.
 
 ## Priorities
 
